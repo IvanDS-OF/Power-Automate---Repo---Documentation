@@ -3,13 +3,19 @@
 La intención de este repositorio es conocer las partes esenciales para desarrollar un RPA con PAD. 
 Desde su inicio hasta su final pasasndo por las exceptiones y el procesamiento de información. 
 
-
 # Documentación
 
+**Notas RPA**
 
-Notas RPA
+Los pasos esenciales para realizar un RPA con PAD. Es necesario conocer algúna metodología para realizar algún proyecto usando PAD, así como en UiPath que existe su conocido ReFramework, en este entorno tendremos que seguir un estándar similar para evitar errores en la programación. 
 
-Los pasos esenciales para realizar un RPA con PAD
+
+
+
+
+
+
+
 
 ### INICIO  
 
@@ -28,8 +34,6 @@ A continuación se describen algunas de las funciones que nos ayudan con esta et
 | Create new List | Crear nueva lista |  | 
 | Create new DataTable | Crear nueva Tabla de datos |  | 
 |  |  |  | 
-|  |  |  | 
-
 
 **Abrir los archivos y aplicaciones**
 
@@ -44,15 +48,8 @@ es necesario indicar la ruta en donde se quiere iniciar el archivo para crearlo 
 | Iniciar Outlook |  |  | 
 | Iniciar SAP |  |  | 
 |  |  |  | 
-|  |  |  | 
-
-
-
 
 Excepciones
-
-
-
 
 
 ### PROCESAMIENTO
@@ -117,37 +114,6 @@ A continuación mostramos algunas acciones que nos ayudan con el tratamiento de 
 |  | Mover carpta |  |  |
 |  | Cambiar el nombre de la carpeta |  |  |
 |  | Obtener carpeta especial |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
 |  |  |  |  |
 
 Existen las acciones en el Navegador que son muy utilizdas cuando necesitamos ingresar a un portal web para obtener información o realizar alguna tarea repetitiva como ingresar información de registro. A continuación vemos algunas de las acciones más importantes que PAD nos ofrece para el procesamiento de información dentro de un entorno Web. 
@@ -231,17 +197,23 @@ Excepciones
 
 
 
-
 ### CIERRE
 
-Finalmente, cuando el robot termina su proceso de forma existosa es recomendable seguir algunas pautas de cierre en la automatización. 
-Algunas de las buenas prácticas serían cerrar todos las aplicaciones, cerrar todas las sesiones de las cuentas en los diferentes portales, 
-enviar un reporte de seguimiento del proceso del robot, etc. 
+Finalmente, cuando el robot termina su proceso de forma existosa es recomendable seguir algunas pautas de cierre en la automatización. Algunas de las buenas prácticas serían cerrar todos las aplicaciones, cerrar todas las sesiones de las cuentas en los diferentes portales, enviar un reporte de seguimiento del proceso del robot, etc. 
 
 A continuación se describen algunas funciones que nos apoyan en estas tareas. 
 
 | Nombre de Acción | Qué hace | Notas |
 | --- | --- | --- |
+| Cerrar sesión del usuario |  |  | 
+| Cerrar ventana | Dentro d un navegador, cierra la ventana actual |  | 
+| Cerrar el esplorador | Depende del explorador usado en tiempo de ejecución |  | 
+| Cerrar Excel |  |  | 
+| Cerrar Word |  |  | 
+| Cerrar conexión SQL |  |  | 
+| Cerrar conexión SAP |  |  | 
+| Finalizar proceso | Finaliza el proceso Windows como cuando se hace con **Ctr+Alt+Supr** |  | 
+|  |  |  | 
 |  |  |  | 
 
 
@@ -249,10 +221,6 @@ Excepciones
 
 
 Entre todas es necesario tener considerados las exceptiones
-
-
-
-
 
 
 # Consideraciones 
