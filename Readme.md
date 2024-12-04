@@ -81,8 +81,85 @@ A continuación mostramos algunas acciones que nos ayudan con el tratamiento de 
 |  | Combinar las tablas de datos |  |  |
 |  | Convertir la tabla de datos en Texto |  |  |
 |  |  |  |  |
+| **Texto** | Anexar línea de texto |  |  |
+|  | Obtener sub texto | Sirve para  |  |
+|  | Recortar texto | Sirve para |  |
+|  | Rellenar texto |  |  |
+|  | Invertir texto |  |  |
+|  | Cambiar Mayúsculas y minúsculas de texto |  |  |
+|  | _Convertir texto en número_ |  |  |
+|  | _Convertir número en texto_ |  |  |
+|  | _Convertir DateTime en texto_ |  |  |
+|  | Crear texto aleatorio |  |  |
+|  | Unir texto |  |  |
+|  | Dividir texto |  |  |
+|  | Analizar Texto |  |  |
+|  | Reemplazar texo |  |  |
+|  | Reconocer entidades en el texto | Sirve para analizar un texto e identificar algunos parámetros simples como La **fecha** dentro del texto |  |
+| **Excel** | Leer en Hoja de cálculo de Excel |  |  |
+|  | Obtener celda activa en la hoja de cálculo de Excel |  |  |
+|  | Guardar Excel |  |  |
+|  | Escribir en la hoja de cálculo de Excel |  |  |
+|  | Establecer la hoja de cálculo de Excel activa |  |  |
+|  | Agregar nueva hoja de cálculo |  |  |
+|  | Obtener la primera columna/fila libre en la hoa de cálculo de Excel |  |  |
+|  | Obtener nombre de la columna en la hoja de cálculo de Excel |  |  |
+|  | Borrar celdas en la hoja de cálculo de Excel |  |  |
+|  | Ordenar Celdas en la hoja de cálculo de Excel |  |  |
+|  | Filtrar celdas en la hoja de cálculo de Excel |  |  |
+|  | Borrar filtros en la hoja de cálculo de Excel |  |  |
+|  | Obtene celda vacía |  |  |
 |  |  |  |  |
-
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 
 
 
