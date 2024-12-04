@@ -153,6 +153,8 @@ A continuación mostramos algunas acciones que nos ayudan con el tratamiento de 
 
 Existen las acciones en el Navegador que son muy utilizdas cuando necesitamos ingresar a un portal web para obtener información o realizar alguna tarea repetitiva como ingresar información de registro. A continuación vemos algunas de las acciones más importantes que PAD nos ofrece para el procesamiento de información dentro de un entorno Web. 
 
+| Campo | Acción | Función | Notas |
+| --- | --- | --- | --- |
 | **Extracción de datos web** | Extracción de datos de la página web |  |  |
 |  | Realizar captura en pantalla de la página web |  |  |
 | **Rellenado de formualrios web** | Rellenar campo de texto en la página web |  |  |
@@ -168,7 +170,7 @@ Existen las acciones en el Navegador que son muy utilizdas cuando necesitamos in
 |  | Ejecutar la función de _Java Script_ en la página web |  |  |
 |  | Despazar el mouse sobre un elemento de la página web |  |  |
 |  |  |  |  |
-|  |  |  |  |
+
 
 
 _Es posible obtener información de tablas dentro de un entorno web, solamente es neccesario hacer la configuración correcta de los selectores para identificar correctamente la tabla_
