@@ -150,17 +150,28 @@ A continuación mostramos algunas acciones que nos ayudan con el tratamiento de 
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+
+Existen las acciones en el Navegador que son muy utilizdas cuando necesitamos ingresar a un portal web para obtener información o realizar alguna tarea repetitiva como ingresar información de registro. A continuación vemos algunas de las acciones más importantes que PAD nos ofrece para el procesamiento de información dentro de un entorno Web. 
+
+| **Extracción de datos web** | Extracción de datos de la página web |  |  |
+|  | Realizar captura en pantalla de la página web |  |  |
+| **Rellenado de formualrios web** | Rellenar campo de texto en la página web |  |  |
+|  | Establecer el estado de la casilla en la página web |  |  |
+|  | Seleccionar botón de radio en la página web |  |  |
+|  | Establecer valor de lista desplegable en la página web |  |  |
+|  | Presionar botón en la página web |  |  |
+| **Generales** | Esperar el contenido de la página web |  |  |
+|  | Si la página web contiene |  |  |
+|  | Crear nueva pestaña |  |  |
+|  | Ir a la página |  |  |
+|  | Hacer click en un vinculo en una página web |  |  |
+|  | Ejecutar la función de _Java Script_ en la página web |  |  |
+|  | Despazar el mouse sobre un elemento de la página web |  |  |
 |  |  |  |  |
 |  |  |  |  |
 
+
+_Es posible obtener información de tablas dentro de un entorno web, solamente es neccesario hacer la configuración correcta de los selectores para identificar correctamente la tabla_
 
 
 Igualmente existen formas para trabajar con la información a través de bucles, en los que encontramos los siguientes:
