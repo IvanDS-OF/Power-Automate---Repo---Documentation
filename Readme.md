@@ -80,7 +80,6 @@ A continuación mostramos algunas acciones que nos ayudan con el tratamiento de 
 |  | Filtrar la tabla de datos |  |  |
 |  | Combinar las tablas de datos |  |  |
 |  | Convertir la tabla de datos en Texto |  |  |
-|  |  |  |  |
 | **Texto** | Anexar línea de texto |  |  |
 |  | Obtener sub texto | Sirve para  |  |
 |  | Recortar texto | Sirve para |  |
@@ -95,7 +94,7 @@ A continuación mostramos algunas acciones que nos ayudan con el tratamiento de 
 |  | Dividir texto |  |  |
 |  | Analizar Texto |  |  |
 |  | Reemplazar texo |  |  |
-|  | Reconocer entidades en el texto | Sirve para analizar un texto e identificar algunos parámetros simples como La **fecha** dentro del texto |  |
+|  | Reconocer entidades en el texto | Analiza un texto e identifica parámetros simples como La **fecha** |  |
 | **Excel** | Leer en Hoja de cálculo de Excel |  |  |
 |  | Obtener celda activa en la hoja de cálculo de Excel |  |  |
 |  | Guardar Excel |  |  |
@@ -109,15 +108,15 @@ A continuación mostramos algunas acciones que nos ayudan con el tratamiento de 
 |  | Filtrar celdas en la hoja de cálculo de Excel |  |  |
 |  | Borrar filtros en la hoja de cálculo de Excel |  |  |
 |  | Obtene celda vacía |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| **Gestión de carpetas** | Si la carpeta existe |  |  |
+|  | Ibtener archivos de la carpeta |  |  |
+|  | Obtener subcarpetas de la carpeta |  |  |
+|  | Crear carpeta |  |  |
+|  | Eliminar carpeta |  |  |
+|  | Copiar carpeta |  |  |
+|  | Mover carpta |  |  |
+|  | Cambiar el nombre de la carpeta |  |  |
+|  | Obtener carpeta especial |  |  |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
@@ -171,20 +170,61 @@ Existen las acciones en el Navegador que son muy utilizdas cuando necesitamos in
 |  | Despazar el mouse sobre un elemento de la página web |  |  |
 |  |  |  |  |
 
+``` Java
+Es posible obtener información de tablas dentro de un entorno web, solamente es neccesario hacer la configuración correcta de los selectores para identificar correctamente la tabla
+```
 
 
-_Es posible obtener información de tablas dentro de un entorno web, solamente es neccesario hacer la configuración correcta de los selectores para identificar correctamente la tabla_
 
-
-Igualmente existen formas para trabajar con la información a través de bucles, en los que encontramos los siguientes:
+Igualmente existen formas para trabajar con la información a través de bucles, y otras formasd de contro de informaciín, como condicionales, en los que encontramos los siguientes:
 _Podemos hacer referencia a cómo funcionan con los lenguajes de programación más comunes como Python, Java, JS, C_
 
 | Nombre de Acción | Qué hace | Notas |
 | --- | --- | --- |
+| **Condicionales** | IF |  | 
+|  | IF-ELSE |  | 
+|  | ELSE |  | 
+| **Bucles** | Bucle - Loop |  | 
+|  | Condición de bucle |  | 
+|  | For Each |  | 
+|  | Salir del Bucle |  | 
+|  | Siguiente bucle |  | 
+| **Control de flujo** | Comentario |  | 
+|  | Detener flujo |  | 
+|  | Ejecutar subflujo |  | 
+|  | _En error del bloque_ |  | 
+|  | End |  | 
+|  | Esoera |  | 
+|  | Etiqueta |  | 
+|  | Ir A |  | 
+|  | Obtener el último error |  | 
+|  | Región |  | 
+|  | Región final |  | 
+|  | Salir del flujo |  | 
+| **Sistema** | Esperar al proceso | Son relacionadas a las aplicaciones de escritorio [Calculadora] | 
+|  | Si el proceso |  | 
+|  | Ejecutar aplicación |  | 
+|  | Finalizar el proceso |  | 
+|  | Ping |  | 
+|  | Establecer variable de entorno Windows |  | 
+|  | Obtener variables de entorno Windows |  | 
+|  | Eliminar variable de entorno Windows |  | 
 |  |  |  | 
 
 
+Algunas otras más funciones que podemos ahcer uso es dentro de entornos y herramientas como las siguientes:
 
+| Nombre | Notas |
+| --- | --- |
+| SAP | EPR empresarial para gestión de inventario |
+| Azure | Herramienta Cloud para gestión de diferentes entornos y servicios |
+| AWS | Azure Web Services |
+| OCR | Herramienta de visión artificial para analizar imágenes |
+|  |  |
+
+```
+Igualmente es importante recordar que estas son funciones estándar, pero que igualmente existen más funciones a las que podemos acceder con una licencia de desarrollador.
+```
 
 
 Excepciones
