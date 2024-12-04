@@ -33,8 +33,17 @@ A continuación se describen algunas de las funciones que nos ayudan con esta et
 
 **Abrir los archivos y aplicaciones**
 
+En algunas ocaciones es necesario colocar información extra cuando se usan las funcioens siguientes, como por ejemplo cuando se inicia un nuevo Excel, 
+es necesario indicar la ruta en donde se quiere iniciar el archivo para crearlo o con un nombre ya predeterminado. 
+
 | Nombre de Acción | Qué hace | Notas |
 | --- | --- | --- |
+| Iniciar nuevo Firefox / Chrome / MS Edge | Inicia una nueva estancia de navegador |  | 
+| Iniciar Excel |  |  | 
+| Iniciar Word |  |  | 
+| Iniciar Outlook |  |  | 
+| Iniciar SAP |  |  | 
+|  |  |  | 
 |  |  |  | 
 
 
@@ -44,7 +53,8 @@ Excepciones
 
 
 
-	*****************************************
+
+
 ### PROCESAMIENTO
 
 En la parte del procesamento de información tenemos algunas fundamentales dependiendo para cada tipo de dato. 
@@ -54,13 +64,44 @@ También cuando trabajamos con trablas podemos agregar registros completos, modi
 
 A continuación mostramos algunas acciones que nos ayudan con el tratamiento de la información. 
 
+| Módulo - Tipo de dato | Función | Qué hace | Notas |
+| --- | --- | --- | --- |
+| **Tabla** | Crear nueva tabla |  |  |
+|  | Insertar FILA en tabla de datos |  |  |
+|  | Eliminar FILA en tabla de datos |  |  |
+|  | Actualizar elemento de la tabla de datos |  |  |
+|  | Buscar o remplazar en la tabla de datos |  |  |
+|  | Insertar COLUMNA de la tabla de datos |  |  |
+|  | Eliminar COLUMNA de la tabla de datos |  |  |
+|  | Eliminar Filas Vacías de la tabla de datos |  |  |
+|  | Eliminar Filas duplicadas de la tabla de datos |  |  |
+|  | Borrar la tabla de datos |  |  |
+|  | Ordenar la tabla de datos |  |  |
+|  | Filtrar la tabla de datos |  |  |
+|  | Combinar las tablas de datos |  |  |
+|  | Convertir la tabla de datos en Texto |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+
+
+Igualmente existen formas para trabajar con la información a través de bucles, en los que encontramos los siguientes:
+_Podemos hacer referencia a cómo funcionan con los lenguajes de programación más comunes como Python, Java, JS, C_
+
 | Nombre de Acción | Qué hace | Notas |
 | --- | --- | --- |
 |  |  |  | 
 
+
+
+
+
 Excepciones
 
-	*****************************************
+
+
+
 ### CIERRE
 
 Finalmente, cuando el robot termina su proceso de forma existosa es recomendable seguir algunas pautas de cierre en la automatización. 
