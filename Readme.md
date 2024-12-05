@@ -34,7 +34,7 @@ Como sugerencia para organizar los subflujos, podemos inicialmente crear algunos
 | CloseAllApplication | I | Cierra las aplicaciones |
 | GetTransactionData | I | Obtiene la información para trabajar |
 | InitAllSettings | I | Lee los archivos necesarios y settea las variables |
-| KillAllProcess | Op |  |
+| KillAllProcess | Op | Mata todos los procesos, puede ser necesario o no, a considerar |
 | Process | I | Procesa, analiza, realiza acciones con la información  |
 | RetryCurrentTransaction | Op |  |
 | SetTransactionStatus | Op |  |
@@ -46,6 +46,18 @@ Como sugerencia para organizar los subflujos, podemos inicialmente crear algunos
 
 
 
+
+
+
+
+Para terminar con las reglas básicas, recordamos algunas buenas prácticas para la programación:
+
++ Colocar las variables y funciones con nombres **descriptivos**.	
++ Colocar el nombre de las variables usando PascalCase.
++ Colocar comentarios o notas al inicio y al final de cada subflujo [Descrivir el proceso].
++ Siempre encontraremos documentación en nuestro Repositorio sobre las funciones y estructura de nuestra plantilla.
++ *Cada función tiene una única funcionalidad*. Es recomendable dividir el código en sub procesos aún más simples en caso de ser necesario.
++ Mantener la documentación del proyecto en su respectivo **BotProcedura**, en el **Readme**, en el **Jira Backlog**.
 
 
 
