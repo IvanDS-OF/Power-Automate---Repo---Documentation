@@ -9,11 +9,20 @@ Desde su inicio hasta su final pasasndo por las exceptiones y el procesamiento d
 
 Los pasos esenciales para realizar un RPA con PAD. Es necesario conocer algúna metodología para realizar algún proyecto usando PAD, así como en UiPath que existe su conocido ReFramework, en este entorno tendremos que seguir un estándar similar para evitar errores en la programación. 
 
+**Organización de los archivos en el MainFolder**
 
+Cada proyecto tendrá un espacio en donde colocaremos toda la información necesaria así como los archivos necesarios para correr el proyecto correctamente:
 
-
-
-
+**RPA_FOLDER_NAME**
++  Data
++ + Input
++ + Output
++ + ConfigFile.xlsx
++ Docuementation [uso de librerías y más herramientas externas]
++ Esception_Screenshots
++ Tests
++ Main [RPA_NAME].pad
++ Readme.md
 
 
 
