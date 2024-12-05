@@ -9,7 +9,7 @@ Desde su inicio hasta su final pasasndo por las exceptiones y el procesamiento d
 
 Los pasos esenciales para realizar un RPA con PAD. Es necesario conocer algúna metodología para realizar algún proyecto usando PAD, así como en UiPath que existe su conocido ReFramework, en este entorno tendremos que seguir un estándar similar para evitar errores en la programación. 
 
-**Organización de los archivos en el MainFolder**
+## Organización de los archivos en el MainFolder
 
 Cada proyecto tendrá un espacio en donde colocaremos toda la información necesaria así como los archivos necesarios para correr el proyecto correctamente:
 
@@ -23,6 +23,29 @@ Cada proyecto tendrá un espacio en donde colocaremos toda la información neces
 + Tests
 + Main [RPA_NAME].pad
 + Readme.md
+
+## Organización de los subFlujos [Recomendación]
+
+Como sugerencia para organizar los subflujos, podemos inicialmente crear algunos que nos pueden ayudar a tener un ambiente más estable, como tipo plantilla. Los sublujos actualmente no se pueden guardar a parte o fuera del proyecto principal por lo que tenemos que guardar uno con todos los subflujos dentro. 
+
+| Nombre de subflujo | Importancia | Notas |
+| --- | --- | --- |
+| InitAllApplication | I | Inicia las aplicaciones |
+| CloseAllApplication | I | Cierra las aplicaciones |
+| GetTransactionData | I | Obtiene la información para trabajar |
+| InitAllSettings | I | Lee los archivos necesarios y settea las variables |
+| KillAllProcess | Op |  |
+| Process | I | Procesa, analiza, realiza acciones con la información  |
+| RetryCurrentTransaction | Op |  |
+| SetTransactionStatus | Op |  |
+| TakeScreenshot | I | Siempre tiene que estar presente en caso de que algo falle, es parte de las excepciones |
+|  |  |  |
+
+
+
+
+
+
 
 
 
