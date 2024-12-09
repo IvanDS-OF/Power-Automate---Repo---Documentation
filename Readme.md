@@ -41,6 +41,18 @@ Como sugerencia para organizar los subflujos, podemos inicialmente crear algunos
 | TakeScreenshot | I | Siempre tiene que estar presente en caso de que algo falle, es parte de las excepciones |
 |  |  |  |
 
+Es importante recordar que existen 3 principales tipos de Procesos de transferencia de información.
+
+Iniciamos con los procesos **Lineales** en donde cada etapa del proceso son ocupados una sola vez, y si es necesario hacer algún paso del proceso otra vez, entonces todo el proceso completo se tendrá que repeir, como ejemplo tenemos _enviar un correo por email_. 
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 
 ## Organización de las variables
 
