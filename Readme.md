@@ -59,8 +59,8 @@ Tenemos igual los proceos **iterativos** en donde los procesos pueden ser ejecut
 graph TD;
     Init --> GetData;
     GetData --> ProcessData;
-    loop ProcessData
-        ProcessData ->> ProcessData : Iterative Information
+    loop ThisIsTitle
+        ThisIsTitle --> ThisIsTitle : Iterative Information
     end
     Note right of ProcessData: Rational thoughts!
     ProcessData --> End;
