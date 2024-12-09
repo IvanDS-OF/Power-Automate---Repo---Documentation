@@ -43,14 +43,13 @@ Como sugerencia para organizar los subflujos, podemos inicialmente crear algunos
 
 Es importante recordar que existen 3 principales tipos de Procesos de transferencia de información.
 
-Iniciamos con los procesos **Lineales** en donde cada etapa del proceso son ocupados una sola vez, y si es necesario hacer algún paso del proceso otra vez, entonces todo el proceso completo se tendrá que repeir, como ejemplo tenemos _enviar un correo por email_. 
+Iniciamos con los procesos **Lineales** en donde cada etapa del proceso son ocupados una sola vez, y si es necesario hacer algún paso del proceso otra vez, entonces todo el proceso completo se tendrá que repeir, como ejemplo tenemos _enviar un correo por email_. A continuación un esquema visual del proceso lineal.
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    Init --> Get Data;
+    Get Data --> Process Data;
+    Process Data --> End;
 ```
 
 
