@@ -71,8 +71,8 @@ DOS
 ```mermaid
 sequenceDiagram
 Init ->> GetData : This is a note
-GetData ->> ProcessData
-loop ProcessData
+GetData ->> ProcessData: 
+loop ThisTittle
     ProcessData ->> ProcessData: This is another note
 end
 Note right of ProcessData: Could be a vector or matrix
