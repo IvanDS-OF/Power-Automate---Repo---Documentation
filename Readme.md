@@ -46,7 +46,18 @@ Como sugerencia para organizar los subflujos, podemos inicialmente crear algunos
 
 Es importante para un proyecto de RPA poder rastrear con facilidad todas las variables que son creadas durante el desarrollo del proyecto, así como aquellas variables que son parte de nuestro Template
 
-Las variables las podemos encontrar como **Globales** y **Locales**
+Las variables las podemos encontrar como **Globales** y **Locales**. La forma para organizar las variables será de la siguiente manera. 
+
+| Nombre de la variable | Tipo de variable | Subflujo de creación | Aparición en subflujos | Descripción | Valor Inicial |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |
+| UsuarioServiceNow | Texto | InitAllSettings | InitAllSettings | ServiceNow user name | user123@contoso.com |
+| PassServiceNow | Password | InitAllSettings | InitAllSettings | ServiceNow user Password | InitAllUsers..12345 |
+|  |  |  |  |  |  |
+
+```
+El contenido de la tabla anterior es de ejemplo
+```
 
 
 
