@@ -42,7 +42,11 @@ Como sugerencia para organizar los subflujos, podemos inicialmente crear algunos
 |  |  |  |
 
 
+## Organización de las variables
 
+Es importante para un proyecto de RPA poder rastrear con facilidad todas las variables que son creadas durante el desarrollo del proyecto, así como aquellas variables que son parte de nuestro Template
+
+Las variables las podemos encontrar como **Globales** y **Locales**
 
 
 
