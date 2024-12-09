@@ -56,53 +56,13 @@ Tenemos igual los proceos **iterativos** en donde los procesos pueden ser ejecut
 
 
 ```mermaid
-graph TD;
-    Init --> GetData
-    GetData --> ProcessData
-    loop ThisIsTitle
-        ThisIsTitle --> ThisIsTitle : Iterative Information
-    end
-    Note right of ProcessData: Rational thoughts!
-    ProcessData --> End
+graph LR;
+    Init --> GetData;
+    GetData --> ProcessData;
+    ProcessData --> ProcessData;
+    ProcessData --> End;
 ```
 
-DOS
-
-```mermaid
-sequenceDiagram
-Init ->> GetData : This is a note
-GetData ->> ProcessData: 
-loop ThisTittle
-    ProcessData ->> ProcessData: This is another note
-end
-Note right of ProcessData: Could be a vector or matrix
-John ->> EndOfProcess
-```
-
-TRES
-
-
-```mermaid
-sequenceDiagram
-Alice->>John: Hello John, how are you?
-loop HealthCheck
-    John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
-```
-
-CUATRO 
-
-```mermaid
-sequenceDiagram
-    Init -> GetData: 
-    loop ProcessData
-        GetData --> EndProcess: IterativeProcess
-    end
-```
 
 
 ## Organización de las variables
