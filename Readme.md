@@ -63,6 +63,17 @@ graph LR;
     ProcessData --> End;
 ```
 
+Finalmente tenemos los procesos **Transaccionales**, son similares a los Iterativos en el sentido de que los procesos pueden ejecutarse mpas de una vez siempre con diferente información. A continuación un diagrama de un proceso transaccional. 
+
+```mermaid
+graph LR;
+    Init --> GetData;
+    GetData --> ProcessData;
+    ProcessData --> GetData;
+    GetData --> End;
+```
+
+
 
 
 ## Organización de las variables
