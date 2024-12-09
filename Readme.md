@@ -52,6 +52,20 @@ graph TD;
     ProcessData --> End;
 ```
 
+Tenemos igual los proceos **iterativos** en donde los procesos pueden ser ejecutados multiples veces, siendo la información que transforman la que cambia en cada iteración. Un ejemplo común puede ser un contador, otro ejemplo puede ser que un mensaje sea enviado en un solo proceso a multiples destinatarios. A continuación un ejemplo de un proceso iterativo. 
+
+
+```mermaid
+graph TD;
+    Init --> GetData;
+    GetData --> ProcessData;
+    loop ProcessData
+        ProcessData ->> ProcessData : Iterative Information
+    end
+    Note right of ProcessData: Rational thoughts!
+    ProcessData --> End;
+```
+
 
 ## Organización de las variables
 
