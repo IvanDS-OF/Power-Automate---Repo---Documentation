@@ -57,14 +57,25 @@ Tenemos igual los proceos **iterativos** en donde los procesos pueden ser ejecut
 
 ```mermaid
 graph TD;
-    Init --> GetData;
-    GetData --> ProcessData;
+    Init --> GetData
+    GetData --> ProcessData
     loop ThisIsTitle
         ThisIsTitle --> ThisIsTitle : Iterative Information
     end
     Note right of ProcessData: Rational thoughts!
-    ProcessData --> End;
+    ProcessData --> End
 ```
+
+
+sequenceDiagram
+Alice->>John: Hello John, how are you?
+loop HealthCheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
 
 
 ## Organización de las variables
