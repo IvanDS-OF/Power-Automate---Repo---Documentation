@@ -46,7 +46,7 @@ Es importante recordar que existen 3 principales tipos de Procesos de transferen
 Iniciamos con los procesos **Lineales** en donde cada etapa del proceso son ocupados una sola vez, y si es necesario hacer algún paso del proceso otra vez, entonces todo el proceso completo se tendrá que repeir, como ejemplo tenemos _enviar un correo por email_. A continuación un esquema visual del proceso lineal.
 
 ```mermaid
-graph TD;
+graph LR;
     Init --> GetData;
     GetData --> ProcessData;
     ProcessData --> End;
@@ -76,8 +76,11 @@ loop ThisTittle
     ProcessData ->> ProcessData: This is another note
 end
 Note right of ProcessData: Could be a vector or matrix
-John ->> End
+John ->> EndOfProcess
 ```
+
+TRES
+
 
 ```mermaid
 sequenceDiagram
@@ -89,6 +92,16 @@ Note right of John: Rational thoughts!
 John-->>Alice: Great!
 John->>Bob: How about you?
 Bob-->>John: Jolly good!
+```
+
+CUATRO 
+
+```mermaid
+sequenceDiagram
+    Init -> GetData: 
+    loop ProcessData
+        GetData --> EndProcess: IterativeProcess
+    end
 ```
 
 
