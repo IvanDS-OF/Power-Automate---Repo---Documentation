@@ -47,9 +47,9 @@ Iniciamos con los procesos **Lineales** en donde cada etapa del proceso son ocup
 
 ```mermaid
 graph TD;
-    Init --> Get Data;
-    Get Data --> Process Data;
-    Process Data --> End;
+    Init --> GetData;
+    GetData --> ProcessData;
+    ProcessData --> End;
 ```
 
 
