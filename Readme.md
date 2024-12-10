@@ -58,20 +58,22 @@ Tenemos igual los proceos **iterativos** en donde los procesos pueden ser ejecut
 ```mermaid
 graph LR;
     Init --> GetData;
-    GetData --> ProcessData;
-    ProcessData --> ProcessData;
-    ProcessData --> End;
+    GetData --> id1[[ProcessData]];
+    id1[[ProcessData]] --> id1[[ProcessData]];
+    id1[[ProcessData]] --> End;
 ```
 
-Finalmente tenemos los procesos **Transaccionales**, son similares a los Iterativos en el sentido de que los procesos pueden ejecutarse mpas de una vez siempre con diferente información. A continuación un diagrama de un proceso transaccional. 
+Finalmente tenemos los procesos **Transaccionales**, son similares a los Iterativos en el sentido de que los procesos pueden ejecutarse más de una vez siempre con diferente información, **este tipo de proceso es el más común en los RPAs desatendidos**. A continuación un diagrama de un proceso transaccional. 
 
 ```mermaid
 graph LR;
-    Init --> GetData;
-    GetData --> ProcessData;
-    ProcessData --> GetData;
-    GetData --> End;
+    Init --> id1[[GetData]];
+    id1[[GetData]] --> id2[[ProcessData]];
+    id2[[ProcessData]] --> id1[[GetData]];
+    id1[[GetData]] --> End;
 ```
+
+
 
 
 
@@ -92,11 +94,6 @@ Las variables las podemos encontrar como **Globales** y **Locales**. La forma pa
 ```
 El contenido de la tabla anterior es de ejemplo
 ```
-
-
-
-
-
 
 
 Para terminar con las reglas básicas, recordamos algunas buenas prácticas para la programación:
