@@ -78,6 +78,10 @@ graph LR;
 
 
 
+
+
+
+
 ## Organización de las variables
 
 Es importante para un proyecto de RPA poder rastrear con facilidad todas las variables que son creadas durante el desarrollo del proyecto, así como aquellas variables que son parte de nuestro Template
@@ -314,6 +318,60 @@ Entre todas es necesario tener considerados las exceptiones
 
 
 # Consideraciones 
+
+
+
+
+# Otras notas
+
+## Otras tipos de organizaciones de Procesos
+
+Podemos hacer uso de una metodología empleada dentro de UiPath recomenda, como es la creación de un Despatcher y un Perfomer. 
+
+Un **Dispatcher** o **Despachador** es aquel que envía los items de transacción a un _Orquestador_, su principal tarea es juntar toda la información necesaria que puede tener diferentes fuentes (un WebSite, una aplicación, un Excel, etc), así como de estructurar de cierta forma la información. 
+
+Mientras que el **Performer** o **Ejecutador** es aquel que, una vez recabados todos los items a trabajar con una estructura estandar y su función es realizar una tarea determinada a cada uno de los items dentro del _Orquestador_.
+
+A continuación un diagrama gráfico de cómo funcionan:
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart TD
+    newLines["Data Source
+    (Get all data)"]
+
+    markdown["Dispatcher"]
+
+    subgraph Queue1
+    Queue1_Item1 --> Queue1_Item2 -->  Queue1_Item3
+    end
+    
+    subgraph Queue2
+    Queue2_Item1--> Queue2_Item2-->Queue2_Item3
+    end
+
+    subgraph Queue3
+    Queue3_Item1-->Queue3_Item2--> Queue3_Item3
+    end
+
+    newLines --> markdown 
+    markdown --> Queue1
+    markdown --> Queue2
+    markdown --> Queue3
+```
+
+```mermaid
+flowchart LR
+    id1(((Performer)))
+
+    subgraph Queue1
+    Queue1_Item1 --> Queue1_Item2 -->  Queue1_Item3 --> Queue1_Item_n
+    end
+
+    Queue1 --> id1
+    id1 --> Queue1
+
+```
 
 
 
