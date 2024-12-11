@@ -330,10 +330,6 @@ Podemos hacer uso de una metodología empleada dentro de UiPath recomenda, como 
 
 Un **Dispatcher** o **Despachador** es aquel que envía los items de transacción a un _Orquestador_, su principal tarea es juntar toda la información necesaria que puede tener diferentes fuentes (un WebSite, una aplicación, un Excel, etc), así como de estructurar de cierta forma la información. 
 
-Mientras que el **Performer** o **Ejecutador** es aquel que, una vez recabados todos los items a trabajar con una estructura estandar y su función es realizar una tarea determinada a cada uno de los items dentro del _Orquestador_.
-
-A continuación un diagrama gráfico de cómo funcionan:
-
 ```mermaid
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
 flowchart TD
@@ -360,12 +356,16 @@ flowchart TD
     markdown --> Queue3
 ```
 
+Mientras que el **Performer** o **Ejecutador** es aquel que, una vez recabados todos los items a trabajar con una estructura estandar y su función es realizar una tarea determinada a cada uno de los items dentro del _Orquestador_.
+
 ```mermaid
 flowchart LR
     id1(((Performer)))
 
     subgraph Queue1
-    Queue1_Item1 --> Queue1_Item2 -->  Queue1_Item3 --> Queue1_Item_n
+    Queue1_Item1  
+    Queue1_Item2 
+    Queue1_Item_n
     end
 
     Queue1 --> id1
