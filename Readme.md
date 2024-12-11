@@ -116,11 +116,11 @@ Para terminar con las reglas básicas, recordamos algunas buenas prácticas para
 Dentro de todo programa es posible que tengamos algún error durante la ejecución o algún evento no esperado. Pero es importante saber qué es un **error** y qué es una **excepción**.
 
 + **Error:** Son eventos que ocurren en un programa y manejarlos requiere un tratamiento no estándar. 
-++ **Syntax Error:** Cuando no se puede compilar el código [Escribir "printt" en vez de "print"]. 
-++ **User Error:** Cuando el valor de entrada del usuario no es válido [Contraseña].
-++ **Programming Error:** Cuando el código compila, pero no obtenemos el resultado deseado [Programar una calculadora y sumar cuando se usa el signo de multiplicar]
+    * **Syntax Error:** Cuando no se puede compilar el código [Escribir "printt" en vez de "print"]. 
+    + **User Error:** Cuando el valor de entrada del usuario no es válido [Contraseña].
+    + **Programming Error:** Cuando el código compila, pero no obtenemos el resultado deseado [Programar una calculadora y sumar cuando se usa el signo de multiplicar]
 + **Excepciones:** Son eventos que se pueden reconocer, categorizar y ser tratados con un procedimiento determinado. 
-++ Estos eventos pueden ser tratados con un programa especial en caso de ocurrir, en ocaciones, el programa que trata la excepción solamente detiene el programa. 
+    + Estos eventos pueden ser tratados con un programa especial en caso de ocurrir, en ocaciones, el programa que trata la excepción solamente detiene el programa. 
 
 Algunos de las excepciones más comunes son las siguientes: 
 
