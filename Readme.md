@@ -111,6 +111,44 @@ Para terminar con las reglas básicas, recordamos algunas buenas prácticas para
 
 
 
+## Error handilng -  Toma de errores
+
+Dentro de todo programa es posible que tengamos algún error durante la ejecución o algún evento no esperado. Pero es importante saber qué es un **error** y qué es una **excepción**.
+
++ **Error:** Son eventos que ocurren en un programa y manejarlos requiere un tratamiento no estándar. 
+++ **Syntax Error:** Cuando no se puede compilar el código [Escribir "printt" en vez de "print"]. 
+++ **User Error:** Cuando el valor de entrada del usuario no es válido [Contraseña].
+++ **Programming Error:** Cuando el código compila, pero no obtenemos el resultado deseado [Programar una calculadora y sumar cuando se usa el signo de multiplicar]
++ **Excepciones:** Son eventos que se pueden reconocer, categorizar y ser tratados con un procedimiento determinado. 
+++ Estos eventos pueden ser tratados con un programa especial en caso de ocurrir, en ocaciones, el programa que trata la excepción solamente detiene el programa. 
+
+Algunos de las excepciones más comunes son las siguientes: 
+
+| Nombre de la Excepción | Definición |
+| --- | --- |
+| Index Out Of Range | Cuando se supera el límite de un objeto |
+| Argument | Cuando introducimos un argumento incorrecto por el tipo, longitud, o no existe |
+| Selector Not Found | Cuando no encuentra correctamente el Selector programado |
+| Text Not Found | Cuando no encuentra el Texto deseado en un inicio |
+| Application | Cuando una aplicación (WebBrowser) no responde|
+| Null Set | Cuando usamos una variable que no está inicializada |
+|  |  |
+
+Es importante considerar siempre los errores porque es posible que dentro del servidor corran otros RPAs y siempre tenemos que tener un ambiente en donde todo es necesario inicializar, por lo que tener una ventana emerjente con un mensaje [PopUp] o un navegador con sesión abierta puede haver que el siguiente RPA no se ejecute de forma correcta o que tenga un error. 
+
+Existe otro tipo de excepciones llamado **Business Exceptions** [Excepciones de negocio] que son aquellas en donde el evento ocurre dentro de la información trabajada. Cuando una excepción de negocio ocurre, el programa se detiene y es necesaria la intervención humana para trabajar con el error. Como ejemplo podemos hacer un programa que hace la división de números encontrados en una base de datos, en caso de que el difisor sea 0 encontraremos un error, y este va a hacer que el programa se detenga. 
+
+Dentro de Power Automate Desktop encontramos algunas formas para trabajar con los Errores y Excepciones -> **En error del bloque** 
+
+
+
+
+
+
+
+
+
+
 ### INICIO  
 
 Al inicio de cada automatización o programa, es necesario hacer algunos pasos iniciales para el correcto funcionamiento del mismo. 
@@ -373,6 +411,7 @@ flowchart LR
 
 ```
 
+Un ejemplo de caso práctico en donde podemos hacer uso de esta organización en un automatización es cuando queremos dar de alta a un empleado en una empresa. Primero usamos el **Dispatcher** para crear un archivo en donde colocaremos todos los emails con metadata adicional, y el **Perfomer** lo usamos para hacer todo el proceso de licenciamiento y permisos especiales de forma automática.
 
 
 
