@@ -30,16 +30,66 @@ Como sugerencia para organizar los subflujos, podemos inicialmente crear algunos
 
 | Nombre de subflujo | Importancia | Notas |
 | --- | --- | --- |
-| InitAllApplication | I | Inicia las aplicaciones |
-| CloseAllApplication | I | Cierra las aplicaciones |
-| GetTransactionData | I | Obtiene la información para trabajar |
+| InitAllApplication | I | Inicia las aplicaciones. Es donde el proceso lee la configuración y abre las aplicaciones. Crea el ambiente para correr bien el proceso |
+| CloseAllApplication | I | Cierra las aplicaciones.  |
+| GetTransactionData | I | Obtiene la información para trabajar. Obtiene el siguiente item para procesar. |
 | InitAllSettings | I | Lee los archivos necesarios y settea las variables |
 | KillAllProcess | Op | Mata todos los procesos, puede ser necesario o no, a considerar |
-| Process | I | Procesa, analiza, realiza acciones con la información  |
+| Process | I | Procesa, analiza, realiza acciones con la información |
 | RetryCurrentTransaction | Op |  |
 | SetTransactionStatus | Op |  |
 | TakeScreenshot | I | Siempre tiene que estar presente en caso de que algo falle, es parte de las excepciones |
 |  |  |  |
+
+Organización de la arquitectura
+
+| Flujo | SubFlujos |
+| :-: | :-: |
+| Initialization | Init All Settings |
+|  | Kill All Process |
+|  | Init All Aplications |
+| Get Transaction Data | Get Transaction Data |
+|  | Process |
+|  | Set Transaction Status |
+|  | Retry Current Transaction - Take Screenshot - Close All Aplications - Kill All Process |
+| End Process | Close All Applications |
+|  | Kill All Process |
+|  |  |
+
+
+A continuación un diagrama de la realación entre los procesos. _Importante:_ **La organización de este flujo proviene del diseño de proceso de UiPath**
+
+```mermaid
+flowchart TD
+    markdown("**Init**")
+
+    newLinesInit["**Initialization**
+    Read configuration file and initialize application used in the process"]
+
+    newLinesEnd[**End Process**
+    End all process and close all aplication used]
+
+    newLinesGetT[**Get Transaction Data**
+    Get the next transaction to be processed]
+
+    newlinesProc[**Process Transaction**]
+
+    id1((Start))
+
+
+    id1 --> newLinesInit
+    newLinesInit --> |Succesfull| newLinesGetT
+    newLinesInit --> |System Exception| newLinesEnd
+
+    newLinesGetT --> |New Transaction| newlinesProc
+    newLinesGetT --> |No Data| newLinesEnd
+
+    newlinesProc --> |Success| newLinesGetT 
+    newlinesProc --> |Business Exception| newLinesGetT 
+    newlinesProc --> |System Exception| newLinesInit 
+```
+
+
 
 Es importante recordar que existen 3 principales tipos de Procesos de transferencia de información.
 
@@ -72,15 +122,6 @@ graph LR;
     id2[[ProcessData]] --> id1[[GetData]];
     id1[[GetData]] --> End;
 ```
-
-
-
-
-
-
-
-
-
 
 ## Organización de las variables
 
@@ -125,7 +166,7 @@ Dentro de todo programa es posible que tengamos algún error durante la ejecuci�
 Algunos de las excepciones más comunes son las siguientes: 
 
 | Nombre de la Excepción | Definición |
-| --- | --- |
+| :-: | :-: |
 | Index Out Of Range | Cuando se supera el límite de un objeto |
 | Argument | Cuando introducimos un argumento incorrecto por el tipo, longitud, o no existe |
 | Selector Not Found | Cuando no encuentra correctamente el Selector programado |
@@ -140,12 +181,11 @@ Existe otro tipo de excepciones llamado **Business Exceptions** [Excepciones de 
 
 Dentro de Power Automate Desktop encontramos algunas formas para trabajar con los Errores y Excepciones -> **En error del bloque** 
 
+Para tratar con una excepción podemos recurrer al uso de una nueva tarea en donde cierra el programa o realiza otra acción. Otra forma es intentar repetir la acción desde un punto en específico del flujo. Otro es terminar el flujo por completo, cerrando todos los programas abiertos y mandando un correo de error. O simplemente continuar con el error. 
 
-
-
-
-
-
+```java
+Recordar siempre que es neceasrio colocar el error dentro del LogFile
+```
 
 
 
