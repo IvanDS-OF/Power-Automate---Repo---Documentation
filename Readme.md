@@ -37,7 +37,7 @@ Como sugerencia para organizar los subflujos, podemos inicialmente crear algunos
 | KillAllProcess | Op | Mata todos los procesos, puede ser necesario o no, a considerar |
 | Process | I | Procesa, analiza, realiza acciones con la información |
 | RetryCurrentTransaction | Op |  |
-| SetTransactionStatus | Op |  |
+| SetTransactionStatus | Op | Aquí colocamos los valores de IO_ConsecutiveSystemExceptions y demás variables así, Variables que llevan un control de los eventos del proceso |
 | TakeScreenshot | I | Siempre tiene que estar presente en caso de que algo falle, es parte de las excepciones |
 |  |  |  |
 
