@@ -1,3 +1,6 @@
-Timestamp, Nivel, Proceso, Acción, Estado, Mensaje, Duración
-
-
+﻿TimeStamp,Nivel,Proceso,Accion,Estado,Mensaje
+,,,,,
+13/02/2025 03:37:44 p. m.,Info,InitAllSettings,Inicializando,Exito,Inicializando el proceso InitAllSettings
+,,,,,
+13/02/2025 03:37:44 p. m.,Info,InitAllSettings,Inicializando,Exito,Inicializando el proceso InitAllSettings
+13/02/2025 03:37:49 p. m.,Info,Initialization,Inicializando,Exito,Inicializando el proceso Initialization
