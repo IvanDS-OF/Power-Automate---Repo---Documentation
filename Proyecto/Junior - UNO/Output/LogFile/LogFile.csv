@@ -1,6 +1,14 @@
 ﻿TimeStamp,Nivel,Proceso,Accion,Estado,Mensaje
 ,,,,,
-13/02/2025 03:37:44 p. m.,Info,InitAllSettings,Inicializando,Exito,Inicializando el proceso InitAllSettings
-,,,,,
-13/02/2025 03:37:44 p. m.,Info,InitAllSettings,Inicializando,Exito,Inicializando el proceso InitAllSettings
-13/02/2025 03:37:49 p. m.,Info,Initialization,Inicializando,Exito,Inicializando el proceso Initialization
+15/02/2025 02:26:32 p. m.,Info,InitAllSettings,Inicializando,Exito,Inicializando el proceso InitAllSettings
+15/02/2025 02:26:34 p. m.,Info,Initialization,Inicializando,Exito,Inicializando el proceso Initialization
+15/02/2025 02:26:39 p. m.,Info,GetTransactionData,Iniciando el proceso,Exito,Vamos a mandar la tabla a formato de tabla
+15/02/2025 02:26:41 p. m.,Info,Process,Iniciando el Proceso,Exito,Iniciando el llenado del formulario de Forms con la info previa
+15/02/2025 02:26:42 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Ernesto, Gutierrez, 12, SI"
+15/02/2025 02:26:57 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Liliana, Sanchez, 32, NO"
+15/02/2025 02:27:11 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Mariana, Osorio, 52, SI"
+15/02/2025 02:27:25 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Erik, Leon, 17, NO"
+15/02/2025 02:27:39 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Ivan, Duran, 20, NO"
+15/02/2025 02:27:53 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de , , , "
+15/02/2025 02:28:07 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de , , , "
+15/02/2025 02:28:22 p. m.,Info,CloaseAllApplication,Cerrando todas las aplicaciones,Exito,Cerrando todas las aplicaciones

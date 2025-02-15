@@ -37,6 +37,13 @@ Como sugerencia se puede hacer el proceso dentro de una REGION que simplemente e
 Por el momento no colocaremos el registro de duración
 ```
 
+## Pasos para obtener info de Excel e iterar entre ella
+
+Primero abrir la instanca de Excel.
+
+
+
+
 ## Errores
 
 
@@ -53,7 +60,7 @@ Por el momento no colocaremos el registro de duración
 | --- | --- | --- | --- | --- | --- | 
 | Main |  |  |  |  |  | 
 |  | InitAllSettings |  |  |  |  | 
-|  |  | Iniciar ConfigFile |  |  |  | 
+|  |  | Iniciar Excel [ConfigFile] |  |  |  | 
 |  |  | Declarar variables de proyecto |  |  |  | 
 |  |  | Log Sequence |  |  |  | 
 |  |  |  |  |  |  | 
@@ -67,7 +74,7 @@ Por el momento no colocaremos el registro de duración
 |  |  | Creation of DataTable to iterate |  |  |  | 
 |  |  |  |  |  |  | 
 |  |  |  |  |  |  | 
-|  | ProcessData |  |  |  |  | 
+|  | Process |  |  |  |  | 
 |  |  |  |  |  |  | 
 |  |  |  |  |  |  | 
 |  |  |  |  |  |  | 
@@ -76,9 +83,9 @@ Por el momento no colocaremos el registro de duración
 |  |  |  |  |  |  | 
 |  |  |  |  |  |  | 
 |  | CloseAllApplications |  |  |  |  | 
-|  | Cerrar instancie Excel [ConfigFile] |  |  |  |  | 
-|  | Cerrar Instancia Excel [ExcelInformationInstance] |  |  |  |  | 
-|  | Cerrar Navegador |  |  |  |  | 
+|  |  | Cerrar instancie Excel [ConfigFile] |  |  |  | 
+|  |  | Cerrar Instancia Excel [ExcelInformationInstance] |  |  |  | 
+|  |  | Cerrar Navegador |  |  |  | 
 |  |  |  |  |  |  | 
 |  |  |  |  |  |  | 
 |  |  |  |  |  |  | 
