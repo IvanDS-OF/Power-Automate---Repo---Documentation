@@ -47,5 +47,61 @@ Por el momento no colocaremos el registro de duración
 
 
 
+### Notas Generales
+
+| Subflujos |  |  |  |  |  | 
+| --- | --- | --- | --- | --- | --- | 
+| Main |  |  |  |  |  | 
+|  | InitAllSettings |  |  |  |  | 
+|  |  | Iniciar ConfigFile |  |  |  | 
+|  |  | Declarar variables de proyecto |  |  |  | 
+|  |  | Log Sequence |  |  |  | 
+|  |  |  |  |  |  | 
+|  | Initializaation |  |  |  |  | 
+|  |  | Log Sequence |  |  |  | 
+|  |  | Open Browser |  |  |  | 
+|  |  | Open Excel |  |  |  | 
+|  |  |  |  |  |  | 
+|  | GetTransactionData |  |  |  |  | 
+|  |  | Set sheet and range |  |  |  | 
+|  |  | Creation of DataTable to iterate |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  | ProcessData |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  | CloseAllApplications |  |  |  |  | 
+|  | Cerrar instancie Excel [ConfigFile] |  |  |  |  | 
+|  | Cerrar Instancia Excel [Base de datos] |  |  |  |  | 
+|  | Cerrar Navegador |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
+|  |  |  |  |  |  | 
 
 
