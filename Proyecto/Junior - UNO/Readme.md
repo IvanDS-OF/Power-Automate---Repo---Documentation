@@ -77,7 +77,7 @@ Por el momento no colocaremos el registro de duración
 |  |  |  |  |  |  | 
 |  | CloseAllApplications |  |  |  |  | 
 |  | Cerrar instancie Excel [ConfigFile] |  |  |  |  | 
-|  | Cerrar Instancia Excel [Base de datos] |  |  |  |  | 
+|  | Cerrar Instancia Excel [ExcelInformationInstance] |  |  |  |  | 
 |  | Cerrar Navegador |  |  |  |  | 
 |  |  |  |  |  |  | 
 |  |  |  |  |  |  | 
