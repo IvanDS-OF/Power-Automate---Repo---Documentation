@@ -1,16 +1,19 @@
 ﻿TimeStamp,Nivel,Proceso,Accion,Estado,Mensaje
 ,,,,,
-15/02/2025 03:56:48 p. m.,Info,InitAllSettings,Inicializando,Exito,Inicializando el proceso InitAllSettings
-15/02/2025 03:56:49 p. m.,Info,Initialization,Inicializando,Exito,Inicializando el proceso Initialization
-15/02/2025 03:56:55 p. m.,Info,GetTransactionData,Iniciando el proceso,Exito,Vamos a mandar la tabla a formato de tabla
-15/02/2025 03:56:57 p. m.,Info,Process,Iniciando el Proceso,Exito,Iniciando el llenado del formulario de Forms con la info previa
-15/02/2025 03:57:00 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Ernesto, Gutierrez, 12, SI"
-15/02/2025 03:57:13 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Liliana, Sanchez, 32, NO"
-15/02/2025 03:57:25 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Mariana, Osorio, 52, SI"
-15/02/2025 03:57:36 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Erik, Leon, 17, NO"
-15/02/2025 03:57:48 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Ivan, Duran, 20, NO"
-15/02/2025 03:57:59 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de , , , "
-15/02/2025 03:58:10 p. m.,Error,Process,For Each Persona,Error,"Error con valor de persona: , , , "
-15/02/2025 03:58:13 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de , , , "
-15/02/2025 03:58:24 p. m.,Error,Process,For Each Persona,Error,"Error con valor de persona: , , , "
-15/02/2025 03:58:26 p. m.,Info,CloaseAllApplication,Cerrando todas las aplicaciones,Exito,Cerrando todas las aplicaciones
+17/02/2025 01:43:53 p. m.,Info,InitAllSettings,Inicializando,Exito,Inicializando el proceso InitAllSettings
+17/02/2025 01:43:54 p. m.,Info,Initialization,Inicializando,Exito,Inicializando el proceso Initialization
+17/02/2025 01:44:01 p. m.,Info,GetTransactionData,Iniciando el proceso,Exito,Vamos a mandar la tabla a formato de tabla
+17/02/2025 01:44:03 p. m.,Info,Process,Iniciando el Proceso,Exito,Iniciando el llenado del formulario de Forms con la info previa
+17/02/2025 01:44:07 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Ernesto, Gutierrez, 12, SI"
+17/02/2025 01:44:54 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Ernesto, Gutierrez, 12, SI"
+17/02/2025 01:45:04 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Liliana, Sanchez, 32, NO"
+17/02/2025 01:45:15 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Mariana, Osorio, 52, SI"
+17/02/2025 01:45:27 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Erik, Leon, 17, NO"
+17/02/2025 01:45:39 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de Ivan, Duran, 20, NO"
+17/02/2025 01:45:50 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de , , , "
+17/02/2025 01:46:01 p. m.,Error,Process,For Each Persona,Error,"Error con valor de persona: , , , "
+17/02/2025 01:46:05 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de , , , "
+17/02/2025 01:46:16 p. m.,Error,Process,For Each Persona,Error,"Error con valor de persona: , , , "
+17/02/2025 01:46:20 p. m.,Info,Process,For Each Persona,Exito,"Metiendo el valor de , , , "
+17/02/2025 01:46:31 p. m.,Error,Process,For Each Persona,Error,"Error con valor de persona: , , , "
+17/02/2025 01:46:33 p. m.,Info,CloaseAllApplication,Cerrando todas las aplicaciones,Exito,Cerrando todas las aplicaciones
