@@ -46,11 +46,21 @@ Primero abrir la instanca de Excel.
 
 ## Errores
 
+Error potencial 1 - No encuentra Selector Botón
+ ``` java
+Situación: Cuando el selector busca el botón no lo encuentra porque Inicialmente el botón tiene el label="Submit" pero luego lo encuentra como label="Enviar"
+ ```
 
+Formas de arreglar el problema.
 
++ Crear una variable llamada SelectorBoton e inicialmente definirlo como "Enviar"
++ En caso de encontrar error cambiaremos su difinición como "Submit"
++ Dentro del selector vamos a mandar a llamar la variable donde corresponde
++ On Error, cambiar la variable y Repetir acción
 
-
-
+``` java
+Tomar Captura de pantalla
+```
 
 
 
@@ -86,7 +96,7 @@ Primero abrir la instanca de Excel.
 |  |  | Cerrar instancie Excel [ConfigFile] |  |  |  | 
 |  |  | Cerrar Instancia Excel [ExcelInformationInstance] |  |  |  | 
 |  |  | Cerrar Navegador |  |  |  | 
-|  |  |  |  |  |  | 
+|  |  | Enviar Correo Elctrónico |  |  |  | 
 |  |  |  |  |  |  | 
 |  |  |  |  |  |  | 
 |  |  |  |  |  |  | 
