@@ -84,6 +84,17 @@ De forma estructural es similar, tendermos:
 |  | _Depende de el proceso_ |  |  |
 |  |  |  |  |
 
+Notas interesantes: Cuando ocurre un error, en ambos casos, las **las variables que establecemos no se van a establecer y luego van a reintentar los procesos** realmente es lo contrario **PRIMERO HACEN LAS OPERACIONES DE REINTENTO Y LUEGO ESTABLECEN LAS VARIABLES** o se dirigen a una Label o ejecutan un subflujo. 
+
+Con respecto a los subflujos ejecutados dentro de las sentencia OnError. Después de que el error fue ejecutado y es mandado a llamar un subflujo, **el subflujo será ejecutado correctamente y luego regresará al error**, esto nos puede ayudar bastante a mandar a llamar a un subflujo en donde encontramos diversos setencias de correccion de errores dada una variable establecida correctamente un paso previo en los errores. Igulamente nos ayuda a obtener una captura de pantalla del equipo en caso de error. 
+
+
+## SQL
+
+
+## Códigos en VBA, Python y PowerShell
+
+
 
 
 ### Notas Generales
