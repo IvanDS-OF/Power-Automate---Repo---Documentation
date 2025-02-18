@@ -1,0 +1,28 @@
+' Primero que nada vamos a recordar cómo se programan las macros
+
+Sub MacroPrueba()
+
+Dim MyPath As String
+
+Dim MyWB As Workbook
+Dim MySh As Worksheet
+
+MyPath = "C:\Users\ivan_\OneDrive\Documentos\Power Automate\Repo\Proyecto\Junior - UNO\Input"
+
+Set MyWB = Workbooks.Open(MyPath & "\macro.xlsm")
+Set MySh = MyWB.Sheets(1)
+
+Debug.Print ("MACRO DE ETSEL")
+
+MsgBox ("Mensaje mostrado on una macro")
+
+MySh.Range("A1:D5") = "MACRO"
+
+
+MyWB.Save
+MyWB.Close
+
+End Sub
+
+
+

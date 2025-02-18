@@ -94,6 +94,11 @@ Con respecto a los subflujos ejecutados dentro de las sentencia OnError. Despué
 
 ## Códigos en VBA, Python y PowerShell
 
+### VBA 
+
+Para correr un código de VBA, es necesario primero tener una **INSTANCIA** con su respectiva extención **.XLSM**
+
+
 
 
 
