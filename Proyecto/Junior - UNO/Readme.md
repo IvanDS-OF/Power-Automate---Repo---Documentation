@@ -63,6 +63,28 @@ Tomar Captura de pantalla
 ```
 
 
+Interesante observación sobre los errores dentro de las funciones. Existen dos fomas de realizar alguna acción cuando hay un error, una es encerrando un conjunto de acciones dentro de un bloque **On Error** y la otra que dentro de proceso activemos la opción On Error. 
+
+De forma estructural es similar, tendermos:
+
+| funcion | Applicacion | Aplicacion | Aplicacion |
+| --- | --- | --- | --- |
+| Directiva de reintentos |  |  |  |
+|  | Ninguno | Fijo | Exponencial |
+| Todos los Errores |  |  |  |
+|  | Ejecución de flujo continúa |  |  |
+|  |  | Ir a la acción siguiente |  |
+|  |  | Repetir acción |  |
+|  |  | Ir a la etiqueta |  |
+|  | Iniciar error |  |  |
+|  | **Nueva regla** |  |  |
+|  |  | stablecer variable |  |
+|  |  | Ejecutar subflujo |  |
+| Avanzada |  |  |  |
+|  | _Depende de el proceso_ |  |  |
+|  |  |  |  |
+
+
 
 ### Notas Generales
 
