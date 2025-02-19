@@ -21,10 +21,13 @@ try:
     CrearCarpetas("3")
     CrearCarpetas("4")
 except:
-    pass
+    print("Error manix")
 
 
-
+'''
+comando para ejecutar en Power Shell y usar el codigo
+py '.\OneDrive\Documentos\Power Automate\Repo\Proyecto\Junior - UNO\Input\pythonCode.py'
+'''
 
 
 
