@@ -98,7 +98,23 @@ Con respecto a los subflujos ejecutados dentro de las sentencia OnError. Despué
 
 Para correr un código de VBA, es necesario primero tener una **INSTANCIA** con su respectiva extención **.XLSM**
 
+La instancia puede ser visible o no. 
 
+``` java
+Recordar que dentro de las macros es necesario colocar un OnError sentence para no mostrar algún PopUp y que el programa en general tenga alguna falla inesperada o se detenga por algún motivo no deseado.
+```
+
+Primero tenemos que incializar la instancia y luego utilizamos el bloque de Excel en PAD para ejecutar la macro, en donde solamente se nos pide el nombre de nuestra instancia y el nombre de la macro tal cual está escrito después del **Sub**
+
+Recordar las limitaciones que tienen los programas de VBA. Ej: No pueden crear una carpeta dos veces en el mismo lugar
+
+### Códigos d Python
+
+Existen dos maneras de ejecutar un código de Python, una es utilizando la sentencia propia de PAD en donde colocamos nuestro cpodigo y listo, el tema es que solo tenemos habilitado Python 2.7 y 2.4, pero si queremos ejecutar un programa con una versión más actual, se recomienda hacer uso de Power Shell. 
+
+Para eso, podemos hacer uso de mandar comando a Power Shell, pero en lo personal noo funciona tan bien. 
+
+Otra forma es de forma "manual", se abre la aplicación desde su ruta de almacenamiento, nos dirigimos a la carpeta base con comandos bash [cd ..] y finalmente corremos el programa con la dirección del código [py 'C:Doc\Programa.py'] y cerramos la aplicación, puede llegar a ser un poco tedioso, pero funciona. Solamente tenemos que ver cómo generamos un Log de los procesos de cada uno de los pasos del proceso de los códigos. 
 
 
 
