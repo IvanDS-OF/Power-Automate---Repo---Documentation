@@ -117,6 +117,15 @@ Para eso, podemos hacer uso de mandar comando a Power Shell, pero en lo personal
 Otra forma es de forma "manual", se abre la aplicación desde su ruta de almacenamiento, nos dirigimos a la carpeta base con comandos bash [cd ..] y finalmente corremos el programa con la dirección del código [py 'C:Doc\Programa.py'] y cerramos la aplicación, puede llegar a ser un poco tedioso, pero funciona. Solamente tenemos que ver cómo generamos un Log de los procesos de cada uno de los pasos del proceso de los códigos. 
 
 
+## CONEXION CON SQL
+
+Primero que nada es necesario tener acceso a la base de datos. Tenemos que tener al menos las CONSULTAS ya probadas dentro de SQL Management Studio (El cual igualmente ya lo tenemos que tener instalado en el equipo), 
+
+Comenzamos con la conexión: El bloque de función dentro de PAD se llama **Abrir Conexion SQL**
+
+
+
+
 
 ### Notas Generales
 
