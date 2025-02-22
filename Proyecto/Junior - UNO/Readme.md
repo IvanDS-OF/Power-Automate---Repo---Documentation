@@ -89,9 +89,6 @@ Notas interesantes: Cuando ocurre un error, en ambos casos, las **las variables 
 Con respecto a los subflujos ejecutados dentro de las sentencia OnError. Después de que el error fue ejecutado y es mandado a llamar un subflujo, **el subflujo será ejecutado correctamente y luego regresará al error**, esto nos puede ayudar bastante a mandar a llamar a un subflujo en donde encontramos diversos setencias de correccion de errores dada una variable establecida correctamente un paso previo en los errores. Igulamente nos ayuda a obtener una captura de pantalla del equipo en caso de error. 
 
 
-## SQL
-
-
 ## Códigos en VBA, Python y PowerShell
 
 ### VBA 
@@ -145,6 +142,31 @@ Driver={SQL Server};Server={};integrated security=true;Database=dbDataBase
 ```
 
 
+## Recorddatorio con el uso de Formulas FX dentro del programa
+
+Es importante conocer el alcance y procedimientos del BOT ya que en la creación del proyecto, de un nuevo .PAD se nos pregunta si deseamos habilitar las **funciones FX**, es importante conocer el proceso del bot y si SERA NECESARIO HACER USO DE FX. Ya que algunas operaciones o manipulacion de datos NO van a ser posibles con los comandos FX activados. 
+
+Un ejemplo que nos trabó el desarrollo fue querer obtener de forma individual los valores de una columna de una tabla haciendo uso de sus indices. 
+
+La tabla era la siguiente: 
+
+| Nombre | Apellido | Edad |
+| --- | --- | --- |
+| Ivan | Duran | 24 |
+| Liliana | Sanchez | 25 |
+| Javier | Salome | 25 |
+
+Con los comandos FX **Desactivados** la forma más sencilla de iterar entre ellos es metiendo la matriz en un ciclo FOR obteniendo sus filas y luego mandar a llamar el argumento generado con un valor de indice
+
+``` python
+For Persona in Matriz
+    Print -> Persona[0]
+    Print -> Persona[1]
+    Print -> Persona[2]
+End for
+```
+
+Pero con FX no es posible esto. Por eso es necesario evaluar desde un inicio los requerimientos así como una idea general e los procesos a prograar para el robot antes de crearlo y activar los comandos FX.
 
 
 ### Notas Generales
