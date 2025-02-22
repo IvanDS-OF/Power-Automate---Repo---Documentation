@@ -123,6 +123,8 @@ Primero que nada es necesario tener acceso a la base de datos. Tenemos que tener
 
 Comenzamos con la conexión: El bloque de función dentro de PAD se llama **Abrir Conexion SQL**
 
+Para hacer correctamente la conexión a nuestra base de datos tenemos dos formas, una que es dde forma automática en donde la información se nos dda por el proveedor de la base de datos en donde solo necesitamos 
+
 
 
 
