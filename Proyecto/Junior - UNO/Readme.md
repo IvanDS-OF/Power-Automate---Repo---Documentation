@@ -123,8 +123,26 @@ Primero que nada es necesario tener acceso a la base de datos. Tenemos que tener
 
 Comenzamos con la conexión: El bloque de función dentro de PAD se llama **Abrir Conexion SQL**
 
-Para hacer correctamente la conexión a nuestra base de datos tenemos dos formas, una que es dde forma automática en donde la información se nos dda por el proveedor de la base de datos en donde solo necesitamos 
+Para hacer correctamente la conexión a nuestra base de datos tenemos dos formas, una que es dde forma automática en donde la información se nos dda por el proveedor de la base de datos en donde solo necesitamos :
 
++ Server name - Nombre el servidor
++ Método de autentiación
++ Seleccionar la base de datos del servidor
+
+Rn caso de que tengamos tanto la base de datos como el motor de la base de datos dentro de local, podemos ingresar el comando correspondiente dentro del apartaddo **Cadena de conexión** en donde solamente necesitamos:
+
++ Driver
++ Server
++ integrated security=true
++ Database
+
+El driver lo podmeos dejar con **SQL Server**, el Server lo podemos encontrar dando click en secundario en SQL Server en el lado izquierddo en Connect para obtener toda la información del servidor, y en DataBase solamente colocamos la bse de datos a la cual nos queremos conectar.
+
+``` java
+Recordar: El texto solo debe ddde estar en una sola linea
+
+Driver={SQL Server};Server={};integrated security=true;Database=dbDataBase
+```
 
 
 
